@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:background="#0066FF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dip">
+
+        <ImageView
+            android:id="@+id/artistPicture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/radiohead"/>
+
+
+
+
+        <TextView
+            android:id="@+id/stageName"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text = "Sahara Tent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="65dp"/>
+
+        <TextView
+            android:id="@+id/artistName"
+            android:layout_below="@+id/stageName"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:text = "RL Grime"
+            android:layout_marginLeft="65dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/stageEmoji"
+            android:layout_toRightOf="@+id/stageName"
+            android:layout_marginLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/fire"/>
+
+        <ImageView
+            android:id="@+id/likeEmoji"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/hearts"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/topBar"
+        android:background="#F2F2F2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dip">
+
+        <TextView
+            android:id="@+id/hypeText"
+            android:textSize="22dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="5dp"
+            android:text= "99%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/hypePercent"
+            android:layout_below="@+id/hypeText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-10dp"
+            android:textSize="23dp"
+            android:text="Hype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_toLeftOf="@+id/divideLine"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/crowd"/>
+
+
+        <View
+            android:id="@+id/divideLine"
+            android:layout_centerInParent="true"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#404040" />
+
+
+        <TextView
+            android:id="@+id/shuffleText"
+            android:textSize="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:text= "99%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/shufflePercent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/shuffleText"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="-10dp"
+            android:textSize="23dp"
+            android:text="TURNT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@+id/divideLine"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/tamborine"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
