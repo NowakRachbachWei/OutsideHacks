@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OutsideLove</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_get_location">getLocation</string>
+    <string name="title_activity_get_server_data">getServerData</string>
+    <string name="title_activity_stage">StageActivity</string>
+</resources>
