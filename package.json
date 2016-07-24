@@ -1,0 +1,31 @@
+{
+  "name": "OutsideHacks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seedDB": "node server/data/seedDB.js",
+    "seedDBProd": "SERVER=deployed HOST=52.34.38.109 PORT=8080 node server/data/seedDB.js",
+    "dev": "nodemon server/index.js",
+    "prod": "SERVER=deployed HOST=52.34.38.109 PORT=8080 forever server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brachbach/OutsideHacks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brachbach/OutsideHacks/issues"
+  },
+  "homepage": "https://github.com/brachbach/OutsideHacks#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "forever": "^0.15.2",
+    "geolib": "^2.0.21",
+    "pg-promise": "^5.2.5"
+  }
+}
